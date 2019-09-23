@@ -1,0 +1,170 @@
+﻿@model IEnumerable<TRACSNarrative.Models.Narrative>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>TRACS Narratives</h1>
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>*@
+<div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        PerNo
+                    </th>
+                    <th>
+                        PerFirstName
+                    </th>
+                    <th>
+                        PerLastName
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @TempData["PerNo"]
+                    </td>
+                    <td>
+                        @TempData["PerFirstName"]
+                    </td>
+                    <td>
+                        @TempData["PerLastName"]
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PerNo)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvSequenceNmbr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContTypeCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvTypeCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TracsAuthRacfId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvEntryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvTimeSpentHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvTimeSpentMinutes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvStickyNote)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TklrAttentionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvEnteredOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastUpdateBrOffCode)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.LastUpdateDtTm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastUpdateBy)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvPendedFlag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvStatusCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrtvScrnsChkdFlag)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Details", "Details", new { id1 = item.BrOffCode, id2 = item.NrtvSequenceNmbr })
+                    @*@Html.ActionLink("Delete", "Delete", new { id1 = item.BrOffCode, id2 = item.NrtvSequenceNmbr })*@
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.PerNo)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvSequenceNmbr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContTypeCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvTypeCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TracsAuthRacfId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvEntryDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvTimeSpentHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvTimeSpentMinutes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvStickyNote)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TklrAttentionDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvEnteredOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastUpdateBrOffCode)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.LastUpdateDtTm)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastUpdateBy)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvPendedFlag)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvStatusCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrtvScrnsChkdFlag)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="margin-top: 100px">
+    <a asp-controller="Person" asp-action="Search">Back to Search</a>
+</div>

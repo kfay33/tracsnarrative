@@ -1,0 +1,354 @@
+2019-07-29T15:17:08.2847274-07:00 0HLOKE9VCILBT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/   (ca22a1cb)
+2019-07-29T15:17:09.3230255-07:00 0HLOKE9VCILBT:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.0924918-07:00 0HLOKE9VCILBT:00000001 [INF] Executed DbCommand ("72"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.1846120-07:00 0HLOKE9VCILBT:00000001 [INF] Executing endpoint '"TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)"' (500cc934)
+2019-07-29T15:17:10.1948277-07:00 0HLOKE9VCILBT:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "TRACSNarrative.Controllers.HomeController" ("TRACSNarrative"). (122b2fdf)
+2019-07-29T15:17:10.2049722-07:00 0HLOKE9VCILBT:00000001 [INF] Executing action method "TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)" - Validation state: Valid (dad538d7)
+2019-07-29T15:17:10.2086484-07:00 0HLOKE9VCILBT:00000001 [INF] Executed action method "TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.4687ms. (50a9e262)
+2019-07-29T15:17:10.2247336-07:00 0HLOKE9VCILBT:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-07-29T15:17:10.3424639-07:00 0HLOKE9VCILBT:00000001 [INF] Executed ViewResult - view "Index" executed in 125.6684ms. (f66409e9)
+2019-07-29T15:17:10.3427142-07:00 0HLOKE9VCILBT:00000001 [INF] Executed action "TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)" in 147.7493ms (afa2e885)
+2019-07-29T15:17:10.3427779-07:00 0HLOKE9VCILBT:00000001 [INF] Executed endpoint '"TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)"' (99874f2b)
+2019-07-29T15:17:10.3535796-07:00 0HLOKE9VCILBT:00000001 [INF] Request finished in 2074.249ms 200 text/html; charset=utf-8 (791a596a)
+2019-07-29T15:17:10.3671713-07:00 0HLOKE9VCILBT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-07-29T15:17:10.3696224-07:00 0HLOKE9VCILBT:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.3765297-07:00 0HLOKE9VCILBU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/css/site.css   (ca22a1cb)
+2019-07-29T15:17:10.3771490-07:00 0HLOKE9VCILC0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/js/bootstrap.bundle.js   (ca22a1cb)
+2019-07-29T15:17:10.3772878-07:00 0HLOKE9VCILBV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   (ca22a1cb)
+2019-07-29T15:17:10.3774708-07:00 0HLOKE9VCILBU:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.3778590-07:00 0HLOKE9VCILC0:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.3779380-07:00 0HLOKE9VCILBV:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.3789118-07:00 0HLOKE9VCILC1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-07-29T15:17:10.3797131-07:00 0HLOKE9VCILC1:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.3836522-07:00 0HLOKE9VCILBU:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.3878154-07:00 0HLOKE9VCILC0:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.3878424-07:00 0HLOKE9VCILBT:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.3881715-07:00 0HLOKE9VCILBV:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.3979995-07:00 0HLOKE9VCILBU:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\css\site.css"' (27b0a520)
+2019-07-29T15:17:10.3982372-07:00 0HLOKE9VCILBU:00000001 [INF] Request finished in 21.7134ms 200 text/css (791a596a)
+2019-07-29T15:17:10.4131119-07:00 0HLOKE9VCILBT:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2019-07-29T15:17:10.4131119-07:00 0HLOKE9VCILBV:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\js\site.js"' (27b0a520)
+2019-07-29T15:17:10.4131119-07:00 0HLOKE9VCILC0:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js"' (27b0a520)
+2019-07-29T15:17:10.4145673-07:00 0HLOKE9VCILC1:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.4172688-07:00 0HLOKE9VCILC0:00000001 [INF] Request finished in 40.1187ms 200 application/javascript (791a596a)
+2019-07-29T15:17:10.4172688-07:00 0HLOKE9VCILBT:00000002 [INF] Request finished in 50.1487ms 200 text/css (791a596a)
+2019-07-29T15:17:10.4173574-07:00 0HLOKE9VCILBV:00000001 [INF] Request finished in 40.0093ms 200 application/javascript (791a596a)
+2019-07-29T15:17:10.4176768-07:00 0HLOKE9VCILC1:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-07-29T15:17:10.4177747-07:00 0HLOKE9VCILC1:00000001 [INF] Request finished in 38.9096ms 200 application/javascript (791a596a)
+2019-07-29T15:17:10.5041850-07:00 0HLOKE9VCILBU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/favicon.ico   (ca22a1cb)
+2019-07-29T15:17:10.5051696-07:00 0HLOKE9VCILBU:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:10.5060466-07:00 0HLOKE9VCILBU:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:10.5070171-07:00 0HLOKE9VCILBU:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\favicon.ico"' (27b0a520)
+2019-07-29T15:17:10.5071103-07:00 0HLOKE9VCILBU:00000002 [INF] Request finished in 2.9428ms 200 image/x-icon (791a596a)
+2019-07-29T15:17:17.5290506-07:00 0HLOKE9VCILBV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/Narrative/Search   (ca22a1cb)
+2019-07-29T15:17:17.5298702-07:00 0HLOKE9VCILBV:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:17.5306181-07:00 0HLOKE9VCILBV:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:17.5337155-07:00 0HLOKE9VCILBV:00000002 [INF] Executing endpoint '"TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)"' (500cc934)
+2019-07-29T15:17:17.5356175-07:00 0HLOKE9VCILBV:00000002 [INF] Route matched with "{action = \"Search\", controller = \"Narrative\", page = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Search()" on controller "TRACSNarrative.Controllers.NarrativeController" ("TRACSNarrative"). (122b2fdf)
+2019-07-29T15:17:17.5541813-07:00 0HLOKE9VCILBV:00000002 [INF] Authorization was successful. (0d575a54)
+2019-07-29T15:17:17.5580401-07:00 0HLOKE9VCILBV:00000002 [INF] Executing action method "TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)" - Validation state: Valid (dad538d7)
+2019-07-29T15:17:17.5583084-07:00 0HLOKE9VCILBV:00000002 [INF] Executed action method "TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1523ms. (50a9e262)
+2019-07-29T15:17:17.5634277-07:00 0HLOKE9VCILBV:00000002 [INF] Executing ViewResult, running view "Search". (c83d0e25)
+2019-07-29T15:17:17.6251756-07:00 0HLOKE9VCILBV:00000002 [INF] Executed ViewResult - view "Search" executed in 66.6438ms. (f66409e9)
+2019-07-29T15:17:17.6252901-07:00 0HLOKE9VCILBV:00000002 [INF] Executed action "TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)" in 89.6145ms (afa2e885)
+2019-07-29T15:17:17.6253417-07:00 0HLOKE9VCILBV:00000002 [INF] Executed endpoint '"TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)"' (99874f2b)
+2019-07-29T15:17:17.6254725-07:00 0HLOKE9VCILBV:00000002 [INF] Request finished in 96.4537ms 200 text/html; charset=utf-8 (791a596a)
+2019-07-29T15:17:17.6356248-07:00 0HLOKE9VCILC0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-07-29T15:17:17.6356149-07:00 0HLOKE9VCILBT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-07-29T15:17:17.6364628-07:00 0HLOKE9VCILC0:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:17.6364739-07:00 0HLOKE9VCILBT:00000003 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:17.6371785-07:00 0HLOKE9VCILBT:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:17.6371827-07:00 0HLOKE9VCILC0:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:17.6379789-07:00 0HLOKE9VCILC0:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-07-29T15:17:17.6379909-07:00 0HLOKE9VCILBT:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-07-29T15:17:17.6380579-07:00 0HLOKE9VCILC0:00000002 [INF] Request finished in 2.4803ms 200 application/javascript (791a596a)
+2019-07-29T15:17:17.6380579-07:00 0HLOKE9VCILBT:00000003 [INF] Request finished in 2.4797ms 200 application/javascript (791a596a)
+2019-07-29T15:17:28.6373924-07:00 0HLOKE9VCILC1:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44381/Narrative/Details application/x-www-form-urlencoded 266 (ca22a1cb)
+2019-07-29T15:17:28.6389725-07:00 0HLOKE9VCILC1:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:28.6403367-07:00 0HLOKE9VCILC1:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:17:28.6436069-07:00 0HLOKE9VCILC1:00000002 [INF] Executing endpoint '"TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)"' (500cc934)
+2019-07-29T15:17:28.6574840-07:00 0HLOKE9VCILC1:00000002 [INF] Route matched with "{action = \"Details\", controller = \"Narrative\", page = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.String, Int32)" on controller "TRACSNarrative.Controllers.NarrativeController" ("TRACSNarrative"). (122b2fdf)
+2019-07-29T15:17:28.6584097-07:00 0HLOKE9VCILC1:00000002 [INF] Authorization was successful. (0d575a54)
+2019-07-29T15:17:28.6841002-07:00 0HLOKE9VCILC1:00000002 [INF] Executing action method "TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)" - Validation state: Valid (dad538d7)
+2019-07-29T15:17:28.6869341-07:00 0HLOKE9VCILC1:00000002 [INF] Log message in the Detail() method (82354599)
+2019-07-29T15:17:28.7509265-07:00 0HLOKE9VCILC1:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"NarrativeContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:17:29.0263069-07:00 0HLOKE9VCILC1:00000002 [INF] Executed DbCommand ("24"ms) [Parameters=["@__BrOffCode_0='?' (Size = 4) (DbType = AnsiString), @__NrtvSequenceNmbr_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[BR_OFF_Code], [n].[NRTV_Sequence_Nmbr], [n].[CONT_TYPE_Code], [n].[Last_Update_Br_Off_Code], [n].[Last_Update_By], [n].[Last_Update_DtTm], [n].[NRTV_Entered_On], [n].[NRTV_Entry_Date], [n].[NRTV_Pended_Flag], [n].[NRTV_Scrns_Chkd_Flag], [n].[NRTV_Status_Code], [n].[NRTV_Sticky_Note], [n].[NRTV_Time_Spent_Hours], [n].[NRTV_Time_Spent_Minutes], [n].[NRTV_TYPE_Code], [n].[PER_NO], [n].[TKLR_Attention_Date], [n].[TRACS_AUTH_RACF_ID], [n.Person].[PER_NO], [n.Person].[CITZN_Code], [n.Person].[DCSD_PER_Death_Date], [n.Person].[DCSD_PER_Death_Flag], [n.Person].[IE_Individual_ID], [n.Person].[JOBS_STAT_Desc_Short], [n.Person].[Last_Update_Br_Off_Code], [n.Person].[Last_Update_By], [n.Person].[Last_Update_DtTm], [n.Person].[PER_ABAWD_Code], [n.Person].[PER_ABAWD_Last_Update_DtTm], [n.Person].[PER_Birth_Date], [n.Person].[PER_Comment], [n.Person].[PER_Comment_Date], [n.Person].[PER_Dis_Acc_Mod_Code], [n.Person].[PER_Dis_Acc_Mod_Text], [n.Person].[PER_Disability_Code], [n.Person].[PER_Educ_Code], [n.Person].[PER_Email_Address], [n.Person].[PER_First_Name], [n.Person].[PER_Goes_By_Name], [n.Person].[PER_Insert_By], [n.Person].[PER_Insert_Date], [n.Person].[PER_JAS_Flag], [n.Person].[PER_Last_Name], [n.Person].[PER_MF_In_Sync], [n.Person].[PER_MI], [n.Person].[PER_Sex_Code], [n.Person].[PER_Suffix_Name], [n.Person].[PER_Veteran_Flag], [n.Person].[PNA_Nmbr], [n.Person].[RACE_Code], [n.Person].[SSN_Nmbr]
+FROM [Narrative] AS [n]
+INNER JOIN [Person] AS [n.Person] ON [n].[PER_NO] = [n.Person].[PER_NO]
+WHERE ([n].[BR_OFF_Code] = @__BrOffCode_0) AND ([n].[NRTV_Sequence_Nmbr] = @__NrtvSequenceNmbr_1)
+ORDER BY [n].[BR_OFF_Code], [n].[NRTV_Sequence_Nmbr]" (0723d8ff)
+2019-07-29T15:17:29.2129678-07:00 0HLOKE9VCILC1:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__BrOffCode_0='?' (Size = 4) (DbType = AnsiString), @__NrtvSequenceNmbr_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n.NarrativeText].[PER_NO], [n.NarrativeText].[BR_OFF_Code], [n.NarrativeText].[NRTV_Sequence_Nmbr], [n.NarrativeText].[NRTV_TEXT_Seq_Nmbr], [n.NarrativeText].[Last_Update_Br_Off_Code], [n.NarrativeText].[Last_Update_By], [n.NarrativeText].[Last_Update_DtTm], [n.NarrativeText].[NRTV_TEXT_Detail]
+FROM [Narrative_Text] AS [n.NarrativeText]
+INNER JOIN (
+    SELECT DISTINCT [t].*
+    FROM (
+        SELECT TOP(1) [n0].[BR_OFF_Code], [n0].[NRTV_Sequence_Nmbr]
+        FROM [Narrative] AS [n0]
+        INNER JOIN [Person] AS [n.Person0] ON [n0].[PER_NO] = [n.Person0].[PER_NO]
+        WHERE ([n0].[BR_OFF_Code] = @__BrOffCode_0) AND ([n0].[NRTV_Sequence_Nmbr] = @__NrtvSequenceNmbr_1)
+        ORDER BY [n0].[BR_OFF_Code], [n0].[NRTV_Sequence_Nmbr]
+    ) AS [t]
+) AS [t0] ON ([n.NarrativeText].[BR_OFF_Code] = [t0].[BR_OFF_Code]) AND ([n.NarrativeText].[NRTV_Sequence_Nmbr] = [t0].[NRTV_Sequence_Nmbr])
+ORDER BY [t0].[BR_OFF_Code], [t0].[NRTV_Sequence_Nmbr]" (0723d8ff)
+2019-07-29T15:17:29.2488084-07:00 0HLOKE9VCILC1:00000002 [INF] Executed action method "TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 564.64ms. (50a9e262)
+2019-07-29T15:17:29.2556718-07:00 0HLOKE9VCILC1:00000002 [INF] Executing ViewResult, running view "Details". (c83d0e25)
+2019-07-29T15:17:29.3108178-07:00 0HLOKE9VCILC1:00000002 [INF] Executed ViewResult - view "Details" executed in 57.0865ms. (f66409e9)
+2019-07-29T15:17:29.3133437-07:00 0HLOKE9VCILC1:00000002 [INF] Executed action "TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)" in 655.7674ms (afa2e885)
+2019-07-29T15:17:29.3150242-07:00 0HLOKE9VCILC1:00000002 [INF] Executed endpoint '"TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)"' (99874f2b)
+2019-07-29T15:17:29.3164562-07:00 0HLOKE9VCILC1:00000002 [INF] Request finished in 679.0811ms 200 text/html; charset=utf-8 (791a596a)
+2019-07-29T15:28:27.4887210-07:00 0HLOKEG9PV7TJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/   (ca22a1cb)
+2019-07-29T15:28:28.2973991-07:00 0HLOKEG9PV7TJ:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:28.9134612-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executed DbCommand ("70"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:28.9984279-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executing endpoint '"TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)"' (500cc934)
+2019-07-29T15:28:29.0079817-07:00 0HLOKEG9PV7TJ:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "TRACSNarrative.Controllers.HomeController" ("TRACSNarrative"). (122b2fdf)
+2019-07-29T15:28:29.0171393-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executing action method "TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)" - Validation state: Valid (dad538d7)
+2019-07-29T15:28:29.0205104-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executed action method "TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3398ms. (50a9e262)
+2019-07-29T15:28:29.0360329-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-07-29T15:28:29.1504031-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executed ViewResult - view "Index" executed in 122.2407ms. (f66409e9)
+2019-07-29T15:28:29.1506684-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executed action "TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)" in 142.5004ms (afa2e885)
+2019-07-29T15:28:29.1507324-07:00 0HLOKEG9PV7TJ:00000001 [INF] Executed endpoint '"TRACSNarrative.Controllers.HomeController.Index (TRACSNarrative)"' (99874f2b)
+2019-07-29T15:28:29.1621894-07:00 0HLOKEG9PV7TJ:00000001 [INF] Request finished in 1678.2047ms 200 text/html; charset=utf-8 (791a596a)
+2019-07-29T15:28:29.1772143-07:00 0HLOKEG9PV7TJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-07-29T15:28:29.1795874-07:00 0HLOKEG9PV7TJ:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:29.1799179-07:00 0HLOKEG9PV7TK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/css/site.css   (ca22a1cb)
+2019-07-29T15:28:29.1807387-07:00 0HLOKEG9PV7TK:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:29.1824495-07:00 0HLOKEG9PV7TL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-07-29T15:28:29.1826674-07:00 0HLOKEG9PV7TM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/js/bootstrap.bundle.js   (ca22a1cb)
+2019-07-29T15:28:29.1832278-07:00 0HLOKEG9PV7TL:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:29.1833401-07:00 0HLOKEG9PV7TM:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:29.1874892-07:00 0HLOKEG9PV7TN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44381/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   (ca22a1cb)
+2019-07-29T15:28:29.1888599-07:00 0HLOKEG9PV7TN:00000001 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:29.1924501-07:00 0HLOKEG9PV7TL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:29.1957051-07:00 0HLOKEG9PV7TM:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:29.1957165-07:00 0HLOKEG9PV7TJ:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:29.1966963-07:00 0HLOKEG9PV7TN:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:29.2001483-07:00 0HLOKEG9PV7TK:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:29.2122190-07:00 0HLOKEG9PV7TK:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\css\site.css"' (27b0a520)
+2019-07-29T15:28:29.2156470-07:00 0HLOKEG9PV7TN:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\js\site.js"' (27b0a520)
+2019-07-29T15:28:29.2171159-07:00 0HLOKEG9PV7TK:00000001 [INF] Request finished in 37.1506ms 200 text/css (791a596a)
+2019-07-29T15:28:29.2171159-07:00 0HLOKEG9PV7TN:00000001 [INF] Request finished in 29.9799ms 200 application/javascript (791a596a)
+2019-07-29T15:28:29.2272081-07:00 0HLOKEG9PV7TL:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-07-29T15:28:29.2273106-07:00 0HLOKEG9PV7TJ:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2019-07-29T15:28:29.2273196-07:00 0HLOKEG9PV7TL:00000001 [INF] Request finished in 44.9295ms 200 application/javascript (791a596a)
+2019-07-29T15:28:29.2273247-07:00 0HLOKEG9PV7TM:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js"' (27b0a520)
+2019-07-29T15:28:29.2273806-07:00 0HLOKEG9PV7TJ:00000002 [INF] Request finished in 50.2217ms 200 text/css (791a596a)
+2019-07-29T15:28:29.2273863-07:00 0HLOKEG9PV7TM:00000001 [INF] Request finished in 44.7363ms 200 application/javascript (791a596a)
+2019-07-29T15:28:29.3225619-07:00 0HLOKEG9PV7TK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/favicon.ico   (ca22a1cb)
+2019-07-29T15:28:29.3239522-07:00 0HLOKEG9PV7TK:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:29.3252863-07:00 0HLOKEG9PV7TK:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:29.3264400-07:00 0HLOKEG9PV7TK:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\favicon.ico"' (27b0a520)
+2019-07-29T15:28:29.3265331-07:00 0HLOKEG9PV7TK:00000002 [INF] Request finished in 4.0707ms 200 image/x-icon (791a596a)
+2019-07-29T15:28:37.8364351-07:00 0HLOKEG9PV7TN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/Narrative/Search   (ca22a1cb)
+2019-07-29T15:28:37.8372063-07:00 0HLOKEG9PV7TN:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:37.8379656-07:00 0HLOKEG9PV7TN:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:37.8410300-07:00 0HLOKEG9PV7TN:00000002 [INF] Executing endpoint '"TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)"' (500cc934)
+2019-07-29T15:28:37.8428460-07:00 0HLOKEG9PV7TN:00000002 [INF] Route matched with "{action = \"Search\", controller = \"Narrative\", page = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Search()" on controller "TRACSNarrative.Controllers.NarrativeController" ("TRACSNarrative"). (122b2fdf)
+2019-07-29T15:28:37.8592924-07:00 0HLOKEG9PV7TN:00000002 [INF] Authorization was successful. (0d575a54)
+2019-07-29T15:28:37.8621119-07:00 0HLOKEG9PV7TN:00000002 [INF] Executing action method "TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)" - Validation state: Valid (dad538d7)
+2019-07-29T15:28:37.8622892-07:00 0HLOKEG9PV7TN:00000002 [INF] Executed action method "TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0958ms. (50a9e262)
+2019-07-29T15:28:37.8650333-07:00 0HLOKEG9PV7TN:00000002 [INF] Executing ViewResult, running view "Search". (c83d0e25)
+2019-07-29T15:28:37.9203132-07:00 0HLOKEG9PV7TN:00000002 [INF] Executed ViewResult - view "Search" executed in 57.8425ms. (f66409e9)
+2019-07-29T15:28:37.9204276-07:00 0HLOKEG9PV7TN:00000002 [INF] Executed action "TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)" in 77.513ms (afa2e885)
+2019-07-29T15:28:37.9204790-07:00 0HLOKEG9PV7TN:00000002 [INF] Executed endpoint '"TRACSNarrative.Controllers.NarrativeController.Search (TRACSNarrative)"' (99874f2b)
+2019-07-29T15:28:37.9205785-07:00 0HLOKEG9PV7TN:00000002 [INF] Request finished in 84.1769ms 200 text/html; charset=utf-8 (791a596a)
+2019-07-29T15:28:37.9315388-07:00 0HLOKEG9PV7TM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-07-29T15:28:37.9315388-07:00 0HLOKEG9PV7TL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-07-29T15:28:37.9323389-07:00 0HLOKEG9PV7TM:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:37.9323467-07:00 0HLOKEG9PV7TL:00000002 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:37.9330910-07:00 0HLOKEG9PV7TM:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:37.9331414-07:00 0HLOKEG9PV7TL:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:37.9338433-07:00 0HLOKEG9PV7TM:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-07-29T15:28:37.9338761-07:00 0HLOKEG9PV7TL:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\Users\OR0199372\source\repos\TRACSNarrative\TRAC_Narrative_AD\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-07-29T15:28:37.9339163-07:00 0HLOKEG9PV7TM:00000002 [INF] Request finished in 2.4121ms 200 application/javascript (791a596a)
+2019-07-29T15:28:37.9339398-07:00 0HLOKEG9PV7TL:00000002 [INF] Request finished in 2.4368ms 200 application/javascript (791a596a)
+2019-07-29T15:28:50.7440334-07:00 0HLOKEG9PV7TJ:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44381/Narrative/Details application/x-www-form-urlencoded 266 (ca22a1cb)
+2019-07-29T15:28:50.7450828-07:00 0HLOKEG9PV7TJ:00000003 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"UserContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:50.7459716-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 50) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Role_Name]
+FROM [Role] AS [r]
+WHERE EXISTS (
+    SELECT 1
+    FROM [User_Roles] AS [u]
+    INNER JOIN [User] AS [u.User] ON [u].[User_ID] = [u.User].[User_ID]
+    WHERE ([u.User].[User_Name] = @__userName_0) AND ([r].[Role_ID] = [u].[Role_ID]))" (0723d8ff)
+2019-07-29T15:28:50.7491259-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executing endpoint '"TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)"' (500cc934)
+2019-07-29T15:28:50.7650821-07:00 0HLOKEG9PV7TJ:00000003 [INF] Route matched with "{action = \"Details\", controller = \"Narrative\", page = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.String, Int32)" on controller "TRACSNarrative.Controllers.NarrativeController" ("TRACSNarrative"). (122b2fdf)
+2019-07-29T15:28:50.7660233-07:00 0HLOKEG9PV7TJ:00000003 [INF] Authorization was successful. (0d575a54)
+2019-07-29T15:28:50.7925243-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executing action method "TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)" - Validation state: Valid (dad538d7)
+2019-07-29T15:28:50.8534478-07:00 0HLOKEG9PV7TJ:00000003 [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"NarrativeContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-29T15:28:51.1096819-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed DbCommand ("25"ms) [Parameters=["@__BrOffCode_0='?' (Size = 4) (DbType = AnsiString), @__NrtvSequenceNmbr_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[BR_OFF_Code], [n].[NRTV_Sequence_Nmbr], [n].[CONT_TYPE_Code], [n].[Last_Update_Br_Off_Code], [n].[Last_Update_By], [n].[Last_Update_DtTm], [n].[NRTV_Entered_On], [n].[NRTV_Entry_Date], [n].[NRTV_Pended_Flag], [n].[NRTV_Scrns_Chkd_Flag], [n].[NRTV_Status_Code], [n].[NRTV_Sticky_Note], [n].[NRTV_Time_Spent_Hours], [n].[NRTV_Time_Spent_Minutes], [n].[NRTV_TYPE_Code], [n].[PER_NO], [n].[TKLR_Attention_Date], [n].[TRACS_AUTH_RACF_ID], [n.Person].[PER_NO], [n.Person].[CITZN_Code], [n.Person].[DCSD_PER_Death_Date], [n.Person].[DCSD_PER_Death_Flag], [n.Person].[IE_Individual_ID], [n.Person].[JOBS_STAT_Desc_Short], [n.Person].[Last_Update_Br_Off_Code], [n.Person].[Last_Update_By], [n.Person].[Last_Update_DtTm], [n.Person].[PER_ABAWD_Code], [n.Person].[PER_ABAWD_Last_Update_DtTm], [n.Person].[PER_Birth_Date], [n.Person].[PER_Comment], [n.Person].[PER_Comment_Date], [n.Person].[PER_Dis_Acc_Mod_Code], [n.Person].[PER_Dis_Acc_Mod_Text], [n.Person].[PER_Disability_Code], [n.Person].[PER_Educ_Code], [n.Person].[PER_Email_Address], [n.Person].[PER_First_Name], [n.Person].[PER_Goes_By_Name], [n.Person].[PER_Insert_By], [n.Person].[PER_Insert_Date], [n.Person].[PER_JAS_Flag], [n.Person].[PER_Last_Name], [n.Person].[PER_MF_In_Sync], [n.Person].[PER_MI], [n.Person].[PER_Sex_Code], [n.Person].[PER_Suffix_Name], [n.Person].[PER_Veteran_Flag], [n.Person].[PNA_Nmbr], [n.Person].[RACE_Code], [n.Person].[SSN_Nmbr]
+FROM [Narrative] AS [n]
+INNER JOIN [Person] AS [n.Person] ON [n].[PER_NO] = [n.Person].[PER_NO]
+WHERE ([n].[BR_OFF_Code] = @__BrOffCode_0) AND ([n].[NRTV_Sequence_Nmbr] = @__NrtvSequenceNmbr_1)
+ORDER BY [n].[BR_OFF_Code], [n].[NRTV_Sequence_Nmbr]" (0723d8ff)
+2019-07-29T15:28:51.2813836-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__BrOffCode_0='?' (Size = 4) (DbType = AnsiString), @__NrtvSequenceNmbr_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n.NarrativeText].[PER_NO], [n.NarrativeText].[BR_OFF_Code], [n.NarrativeText].[NRTV_Sequence_Nmbr], [n.NarrativeText].[NRTV_TEXT_Seq_Nmbr], [n.NarrativeText].[Last_Update_Br_Off_Code], [n.NarrativeText].[Last_Update_By], [n.NarrativeText].[Last_Update_DtTm], [n.NarrativeText].[NRTV_TEXT_Detail]
+FROM [Narrative_Text] AS [n.NarrativeText]
+INNER JOIN (
+    SELECT DISTINCT [t].*
+    FROM (
+        SELECT TOP(1) [n0].[BR_OFF_Code], [n0].[NRTV_Sequence_Nmbr]
+        FROM [Narrative] AS [n0]
+        INNER JOIN [Person] AS [n.Person0] ON [n0].[PER_NO] = [n.Person0].[PER_NO]
+        WHERE ([n0].[BR_OFF_Code] = @__BrOffCode_0) AND ([n0].[NRTV_Sequence_Nmbr] = @__NrtvSequenceNmbr_1)
+        ORDER BY [n0].[BR_OFF_Code], [n0].[NRTV_Sequence_Nmbr]
+    ) AS [t]
+) AS [t0] ON ([n.NarrativeText].[BR_OFF_Code] = [t0].[BR_OFF_Code]) AND ([n.NarrativeText].[NRTV_Sequence_Nmbr] = [t0].[NRTV_Sequence_Nmbr])
+ORDER BY [t0].[BR_OFF_Code], [t0].[NRTV_Sequence_Nmbr]" (0723d8ff)
+2019-07-29T15:28:51.3124820-07:00 0HLOKEG9PV7TJ:00000003 [INF] Deleting TRACS Narrative: 43211472 (b3a7b237)
+2019-07-29T15:28:51.3143984-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed action method "TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 521.8035ms. (50a9e262)
+2019-07-29T15:28:51.3213448-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executing ViewResult, running view "Details". (c83d0e25)
+2019-07-29T15:28:51.3773349-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed ViewResult - view "Details" executed in 59.0591ms. (f66409e9)
+2019-07-29T15:28:51.3795508-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed action "TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)" in 614.39ms (afa2e885)
+2019-07-29T15:28:51.3806416-07:00 0HLOKEG9PV7TJ:00000003 [INF] Executed endpoint '"TRACSNarrative.Controllers.NarrativeController.Details (TRACSNarrative)"' (99874f2b)
+2019-07-29T15:28:51.3816685-07:00 0HLOKEG9PV7TJ:00000003 [INF] Request finished in 637.6596ms 200 text/html; charset=utf-8 (791a596a)

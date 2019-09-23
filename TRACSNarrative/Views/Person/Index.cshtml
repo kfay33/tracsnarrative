@@ -1,0 +1,224 @@
+﻿@model IEnumerable<TRACSNarrative.Models.Person>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Person List</h1>
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.PerLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PerFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PerMi)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.PerSuffixName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerGoesByName)
+        </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.PerBirthDate)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.CitznCode)
+        </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.RaceCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PerSexCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DcsdPerDeathDate)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.DcsdPerDeathFlag)
+        </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.SsnNmbr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PnaNmbr)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.PerMfInSync)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobsStatDescShort)
+        </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.PerComment)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.PerInsertDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerInsertBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdateBrOffCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdateDtTm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdateBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerEducCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerJasFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerVeteranFlag)
+        </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.PerCommentDate)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.PerDisabilityCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerDisAccModCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerDisAccModText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerEmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerAbawdCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerAbawdLastUpdateDtTm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IeIndividualId)
+        </th>*@
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.PerNo">Edit</a> |
+            <a asp-action="Details" asp-route-id="@item.PerNo">Details</a> |*@
+                <a asp-controller="Narrative" asp-action="List" asp-route-id="@item.PerNo">Narratives</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerMi)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.PerSuffixName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerGoesByName)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PerBirthDate)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.CitznCode)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.RaceCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerSexCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DcsdPerDeathDate)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.DcsdPerDeathFlag)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.SsnNmbr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PnaNmbr)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.PerMfInSync)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobsStatDescShort)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PerComment)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.PerInsertDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerInsertBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastUpdateBrOffCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastUpdateDtTm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastUpdateBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerEducCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerJasFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerVeteranFlag)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PerCommentDate)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.PerDisabilityCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerDisAccModCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerDisAccModText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerEmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerAbawdCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerAbawdLastUpdateDtTm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IeIndividualId)
+        </td>*@
+
+        </tr>
+}
+    </tbody>
+</table>
+<div style="margin-top: 100px">
+    <a asp-controller="Person" asp-action="Search">Back to Search</a>
+</div>

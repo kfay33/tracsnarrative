@@ -1,0 +1,20 @@
+﻿@model StatusViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+@if (Model.statusCode == 403)
+{
+
+    <h2 class="text-danger">ACCESS DENIED</h2>
+    <p class="text-danger">You do not have access to this resource.</p>
+
+}
+else
+{
+    <h1>Error.</h1>
+    <h2>An error occurred while processing your request.</h2>
+    <h2 class="text-danger">Status Code: @Model.statusCode; @Model.statusPhrase</h2>
+}
+
+

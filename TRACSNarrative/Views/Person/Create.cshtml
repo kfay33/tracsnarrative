@@ -1,0 +1,160 @@
+﻿@model TRACSNarrative.Models.Person
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Person</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PerNo" class="control-label"></label>
+                <input asp-for="PerNo" class="form-control" />
+                <span asp-validation-for="PerNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerLastName" class="control-label"></label>
+                <input asp-for="PerLastName" class="form-control" />
+                <span asp-validation-for="PerLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerFirstName" class="control-label"></label>
+                <input asp-for="PerFirstName" class="form-control" />
+                <span asp-validation-for="PerFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerMi" class="control-label"></label>
+                <input asp-for="PerMi" class="form-control" />
+                <span asp-validation-for="PerMi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerSuffixName" class="control-label"></label>
+                <input asp-for="PerSuffixName" class="form-control" />
+                <span asp-validation-for="PerSuffixName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerGoesByName" class="control-label"></label>
+                <input asp-for="PerGoesByName" class="form-control" />
+                <span asp-validation-for="PerGoesByName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerBirthDate" class="control-label"></label>
+                <input asp-for="PerBirthDate" class="form-control" />
+                <span asp-validation-for="PerBirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CitznCode" class="control-label"></label>
+                <input asp-for="CitznCode" class="form-control" />
+                <span asp-validation-for="CitznCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RaceCode" class="control-label"></label>
+                <input asp-for="RaceCode" class="form-control" />
+                <span asp-validation-for="RaceCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerSexCode" class="control-label"></label>
+                <input asp-for="PerSexCode" class="form-control" />
+                <span asp-validation-for="PerSexCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DcsdPerDeathDate" class="control-label"></label>
+                <input asp-for="DcsdPerDeathDate" class="form-control" />
+                <span asp-validation-for="DcsdPerDeathDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DcsdPerDeathFlag" class="control-label"></label>
+                <input asp-for="DcsdPerDeathFlag" class="form-control" />
+                <span asp-validation-for="DcsdPerDeathFlag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SsnNmbr" class="control-label"></label>
+                <input asp-for="SsnNmbr" class="form-control" />
+                <span asp-validation-for="SsnNmbr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PnaNmbr" class="control-label"></label>
+                <input asp-for="PnaNmbr" class="form-control" />
+                <span asp-validation-for="PnaNmbr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerMfInSync" class="control-label"></label>
+                <input asp-for="PerMfInSync" class="form-control" />
+                <span asp-validation-for="PerMfInSync" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobsStatDescShort" class="control-label"></label>
+                <input asp-for="JobsStatDescShort" class="form-control" />
+                <span asp-validation-for="JobsStatDescShort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerComment" class="control-label"></label>
+                <input asp-for="PerComment" class="form-control" />
+                <span asp-validation-for="PerComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerEducCode" class="control-label"></label>
+                <input asp-for="PerEducCode" class="form-control" />
+                <span asp-validation-for="PerEducCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerJasFlag" class="control-label"></label>
+                <input asp-for="PerJasFlag" class="form-control" />
+                <span asp-validation-for="PerJasFlag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerCommentDate" class="control-label"></label>
+                <input asp-for="PerCommentDate" class="form-control" />
+                <span asp-validation-for="PerCommentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerDisabilityCode" class="control-label"></label>
+                <input asp-for="PerDisabilityCode" class="form-control" />
+                <span asp-validation-for="PerDisabilityCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerDisAccModCode" class="control-label"></label>
+                <input asp-for="PerDisAccModCode" class="form-control" />
+                <span asp-validation-for="PerDisAccModCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerDisAccModText" class="control-label"></label>
+                <input asp-for="PerDisAccModText" class="form-control" />
+                <span asp-validation-for="PerDisAccModText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerEmailAddress" class="control-label"></label>
+                <input asp-for="PerEmailAddress" class="form-control" />
+                <span asp-validation-for="PerEmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerAbawdCode" class="control-label"></label>
+                <input asp-for="PerAbawdCode" class="form-control" />
+                <span asp-validation-for="PerAbawdCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerAbawdLastUpdateDtTm" class="control-label"></label>
+                <input asp-for="PerAbawdLastUpdateDtTm" class="form-control" />
+                <span asp-validation-for="PerAbawdLastUpdateDtTm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IeIndividualId" class="control-label"></label>
+                <input asp-for="IeIndividualId" class="form-control" />
+                <span asp-validation-for="IeIndividualId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,94 @@
+﻿@model TRACSNarrative.Models.Narrative
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Narrative</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PerNo" class="control-label"></label>
+                <input asp-for="PerNo" class="form-control" />
+                <span asp-validation-for="PerNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrOffCode" class="control-label"></label>
+                <input asp-for="BrOffCode" class="form-control" />
+                <span asp-validation-for="BrOffCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvSequenceNmbr" class="control-label"></label>
+                <input asp-for="NrtvSequenceNmbr" class="form-control" />
+                <span asp-validation-for="NrtvSequenceNmbr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContTypeCode" class="control-label"></label>
+                <input asp-for="ContTypeCode" class="form-control" />
+                <span asp-validation-for="ContTypeCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvTypeCode" class="control-label"></label>
+                <input asp-for="NrtvTypeCode" class="form-control" />
+                <span asp-validation-for="NrtvTypeCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TracsAuthRacfId" class="control-label"></label>
+                <input asp-for="TracsAuthRacfId" class="form-control" />
+                <span asp-validation-for="TracsAuthRacfId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvTimeSpentHours" class="control-label"></label>
+                <input asp-for="NrtvTimeSpentHours" class="form-control" />
+                <span asp-validation-for="NrtvTimeSpentHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvTimeSpentMinutes" class="control-label"></label>
+                <input asp-for="NrtvTimeSpentMinutes" class="form-control" />
+                <span asp-validation-for="NrtvTimeSpentMinutes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvStickyNote" class="control-label"></label>
+                <input asp-for="NrtvStickyNote" class="form-control" />
+                <span asp-validation-for="NrtvStickyNote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TklrAttentionDate" class="control-label"></label>
+                <input asp-for="TklrAttentionDate" class="form-control" />
+                <span asp-validation-for="TklrAttentionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvEnteredOn" class="control-label"></label>
+                <input asp-for="NrtvEnteredOn" class="form-control" />
+                <span asp-validation-for="NrtvEnteredOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvPendedFlag" class="control-label"></label>
+                <input asp-for="NrtvPendedFlag" class="form-control" />
+                <span asp-validation-for="NrtvPendedFlag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvScrnsChkdFlag" class="control-label"></label>
+                <input asp-for="NrtvScrnsChkdFlag" class="form-control" />
+                <span asp-validation-for="NrtvScrnsChkdFlag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

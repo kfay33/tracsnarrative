@@ -1,0 +1,111 @@
+﻿@model TRACSNarrative.Models.Narrative
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Narrative</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PerNo" class="control-label"></label>
+                <input asp-for="PerNo" class="form-control" />
+                <span asp-validation-for="PerNo" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="BrOffCode" />
+            <input type="hidden" asp-for="NrtvSequenceNmbr" />
+            <div class="form-group">
+                <label asp-for="ContTypeCode" class="control-label"></label>
+                <input asp-for="ContTypeCode" class="form-control" />
+                <span asp-validation-for="ContTypeCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvTypeCode" class="control-label"></label>
+                <input asp-for="NrtvTypeCode" class="form-control" />
+                <span asp-validation-for="NrtvTypeCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TracsAuthRacfId" class="control-label"></label>
+                <input asp-for="TracsAuthRacfId" class="form-control" />
+                <span asp-validation-for="TracsAuthRacfId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvEntryDate" class="control-label"></label>
+                <input asp-for="NrtvEntryDate" class="form-control" />
+                <span asp-validation-for="NrtvEntryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvTimeSpentHours" class="control-label"></label>
+                <input asp-for="NrtvTimeSpentHours" class="form-control" />
+                <span asp-validation-for="NrtvTimeSpentHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvTimeSpentMinutes" class="control-label"></label>
+                <input asp-for="NrtvTimeSpentMinutes" class="form-control" />
+                <span asp-validation-for="NrtvTimeSpentMinutes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvStickyNote" class="control-label"></label>
+                <input asp-for="NrtvStickyNote" class="form-control" />
+                <span asp-validation-for="NrtvStickyNote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TklrAttentionDate" class="control-label"></label>
+                <input asp-for="TklrAttentionDate" class="form-control" />
+                <span asp-validation-for="TklrAttentionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvEnteredOn" class="control-label"></label>
+                <input asp-for="NrtvEnteredOn" class="form-control" />
+                <span asp-validation-for="NrtvEnteredOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastUpdateBrOffCode" class="control-label"></label>
+                <input asp-for="LastUpdateBrOffCode" class="form-control" />
+                <span asp-validation-for="LastUpdateBrOffCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastUpdateDtTm" class="control-label"></label>
+                <input asp-for="LastUpdateDtTm" class="form-control" />
+                <span asp-validation-for="LastUpdateDtTm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastUpdateBy" class="control-label"></label>
+                <input asp-for="LastUpdateBy" class="form-control" />
+                <span asp-validation-for="LastUpdateBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvPendedFlag" class="control-label"></label>
+                <input asp-for="NrtvPendedFlag" class="form-control" />
+                <span asp-validation-for="NrtvPendedFlag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvStatusCode" class="control-label"></label>
+                <input asp-for="NrtvStatusCode" class="form-control" />
+                <span asp-validation-for="NrtvStatusCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvScrnsChkdFlag" class="control-label"></label>
+                <input asp-for="NrtvScrnsChkdFlag" class="form-control" />
+                <span asp-validation-for="NrtvScrnsChkdFlag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

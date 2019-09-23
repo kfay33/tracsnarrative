@@ -1,0 +1,42 @@
+﻿@model TRACSNarrative.Models.Narrative
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4>@TempData["NoResults"]@TempData["DeleteSuccess"]</h4>
+<h1>TRACS Narrative Search</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Details" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BrOffCode" class="control-label" ></label>
+                <input asp-for="BrOffCode" class="form-control" id="BrOffCode" />
+                <span asp-validation-for="BrOffCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NrtvSequenceNmbr" class="control-label" ></label>
+                <input asp-for="NrtvSequenceNmbr" class="form-control" id="NrtvSequenceNmbr" />
+                <span asp-validation-for="NrtvSequenceNmbr" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+<div>
+    <a asp-controller="Person" asp-action="Search">Person Search</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
