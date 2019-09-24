@@ -1,4 +1,4 @@
-// Add OA roles from database to AD claims.﻿
+// Add  OA roles from database to AD claims.﻿
 using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Collections.Generic;
