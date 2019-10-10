@@ -10,8 +10,8 @@
 <div>
     @*<h4>Narrative</h4>*@
     <div>
-        <table class="table">
-            <thead>
+        <table class="table table-bordered">
+            <thead class="thead-light">
                 <tr>
                     <th>
                         PerNo
@@ -21,25 +21,25 @@
                     </th>
                     <th>
                         PerLastName
-                    </th>                    
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(model => model.Person.PerNo)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(model => model.Person.PerFirstName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(model => model.Person.PerLastName)
-                        </td>                        
-                    </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => model.Person.PerNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Person.PerFirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Person.PerLastName)
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
-    <hr />
+
     <dl class="row">
         @*<dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PerNo)
@@ -146,8 +146,8 @@
     </dl>
 </div>
 <div>
-    <table class="table">
-        <thead>
+    <table class="table table-bordered">
+        <thead class="thead-light">
             <tr>
                 <th>
                     NrtvTextSeqNmbr
