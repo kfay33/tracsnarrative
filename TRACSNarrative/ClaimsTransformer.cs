@@ -1,4 +1,4 @@
-// Add OA authorization roles from database to AD claims.﻿
+// Add authorization roles from OA database to AD claims.﻿
 using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Collections.Generic;
