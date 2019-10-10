@@ -11,38 +11,39 @@
         <a asp-action="Create">Create New</a>
     </p>*@
 <div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        PerNo
-                    </th>
-                    <th>
-                        PerFirstName
-                    </th>
-                    <th>
-                        PerLastName
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        @TempData["PerNo"]
-                    </td>
-                    <td>
-                        @TempData["PerFirstName"]
-                    </td>
-                    <td>
-                        @TempData["PerLastName"]
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-<hr />
-<table class="table">
-    <thead>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    PerNo
+                </th>
+                <th>
+                    PerFirstName
+                </th>
+                <th>
+                    PerLastName
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @TempData["PerNo"]
+                </td>
+                <td>
+                    @TempData["PerFirstName"]
+                </td>
+                <td>
+                    @TempData["PerLastName"]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<table class="table table-bordered">
+    <thead class="thead-light">
         <tr>
             <th></th>
             @*<th>
